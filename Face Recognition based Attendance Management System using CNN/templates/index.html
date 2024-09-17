@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch 1 Project</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-title">BATCH 1 Project</div>
+        <div class="nav-buttons">
+            <button onclick="location.href='/login'">Student Login</button>
+            <button onclick="location.href='/teachers'">Teachers Login</button>
+            <button onclick="location.href='#'">Help Desk</button>
+        </div>
+    </nav>
+    
+    <div class="title"><h1>Attendance Management System Using Face Recognition </h1></div>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='image_folder/tec.jpg') }}" alt="Logo" class="logo">
+    </div>
+
+    <div class="details-container">
+        <div class="left-details">
+            <h2>UNDER THE GUIDANCE OF</h2>
+            <p>Mr. Thati Jagadeesh M.Tech, M.S., (Ph. D)</p>
+            <p>HOD, Associate Professor</p>
+            <p>Department of ECE</p>
+        </div>
+        <div class="right-details">
+            <h2>PRESENTED BY</h2>
+            <p>Nerella Lahari<span>21NE5A0414</span></p>
+            <p>Nasanam Sambasivudu<span>20NE1A04B1</span></p>
+            <p>Korivi Priyanka<span>21NE5A0408</span></p>
+            <p>Komaragiri Vijay Raju<span>20NE1A0478</span></p>
+            <p>Katepalli Durvasulu<span>20NE1A0475</span></p>
+        </div>
+    </div>
+
+</body>
+</html>

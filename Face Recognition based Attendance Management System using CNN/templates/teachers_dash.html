@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='teachers_dash.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="dashboard-title">Welcome to Teacher's Dashboard 🌸🌼</h1>
+        <div class="button-container">
+            <button onclick="location.href='/find_student'">Find Student</button>
+            <button onclick="location.href='/take_attendance'">Take Attendance</button>
+            <button onclick="location.href='/train_data'">Train Data</button>
+            <button onclick="location.href='/download_details'">Download Details</button>
+        </div>
+    </div>
+</body>
+</html>

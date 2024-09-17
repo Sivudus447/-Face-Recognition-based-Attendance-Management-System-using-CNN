@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Progress</title>
+</head>
+<body>
+    <h2>Training Progress</h2>
+    <p>Epochs:</p>
+    <ul>
+        {% for epoch, (loss, accuracy) in enumerate(zip(history.history['loss'], history.history['accuracy']), 1) %}
+            <li>Epoch {{ epoch }}: Loss {{ loss }}, Accuracy {{ accuracy }}</li>
+        {% endfor %}
+    </ul>
+    <p>Training successfully completed.</p>
+</body>
+</html>

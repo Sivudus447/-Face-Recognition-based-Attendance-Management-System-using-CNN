@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Login</title>
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Teachers.css') }}">
+    <script>
+        // Function to hide the alert message after 5 seconds
+        window.onload = function() {
+            var alertContainer = document.querySelector('.alert-container');
+            if (alertContainer) {
+                setTimeout(function() {
+                    alertContainer.style.display = 'none';
+                }, 2000); // 3000 milliseconds = 3 seconds
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="alert-container">
+        {% if error_message %}
+        <div class="alert">
+            <p>{{ error_message }}</p>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="container">
+        <h2>Teacher's Login</h2>
+        <form action="/teachers" method="POST">
+            <label for="teacher_id">Teacher ID</label><br>
+            <input type="text" id="teacher_id" name="teacher_id" required><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

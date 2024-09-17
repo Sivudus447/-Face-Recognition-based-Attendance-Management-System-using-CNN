@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+}
+
+.container {
+    background-color: #fff;
+    margin-top: 200px;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d; /* Ensures child elements maintain 3D positioning */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+.container:hover {
+    transform: rotateY(10deg); /* Apply rotation effect on hover */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for input and box shadow */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Increase box shadow on focus */
+}
+
+input[type="submit"] {
+    background-color: #1e3758;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2c4f7a;
+}
+
+p {
+    text-align: center;
+}
+
+.login-link {
+    color: #1e3758;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease; /* Transition for color change */
+}
+
+.login-link:hover {
+    color: #2c4f7a; /* Change color on hover */
+}

@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px; /* Increase padding for larger box */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d; /* Ensures child elements maintain 3D positioning */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+    max-width: 400px; /* Increase max-width for wider box */
+    width: 80%; /* Add width to make the box responsive */
+}
+
+.container:hover {
+    transform: rotateY(5deg); /* Apply rotation effect on hover */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    padding: 12px; /* Increase padding for larger input fields */
+    margin-bottom: 12px; /* Increase margin for larger input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition for input and submit button */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="submit"]:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Increase box shadow on focus/hover */
+}
+
+input[type="submit"] {
+    background-color: #1e3758;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #2c4f7a;
+}
+
+.alert-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.alert {
+    background-color: #ffcccc;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.alert p {
+    margin: 0;
+}

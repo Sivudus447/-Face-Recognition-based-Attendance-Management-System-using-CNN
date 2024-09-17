@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='student_details.css') }}">
+</head>
+<body>
+    <h2>Student Details</h2>
+    <table class="styled-table">
+        <tr>
+            <th>Field</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Full Name</td>
+            <td>{{ student.full_name }}</td>
+        </tr>
+        <tr>
+            <td>Roll Number</td>
+            <td>{{ student.roll_number }}</td>
+        </tr>
+        <tr>
+            <td>Phone Number</td>
+            <td>{{ student.phone_number }}</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>{{ student.email }}</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>{{ student.gender }}</td>
+        </tr>
+        <tr>
+            <td>Department</td>
+            <td>{{ student.department }}</td>
+        </tr>
+        <tr>
+            <td>Year of Study</td>
+            <td>{{ student.year_of_study }}</td>
+        </tr>
+    </table>
+    <h2>Attendance Details</h2>
+    <table class="styled-table">
+        <tr>
+            <th>Total Days Attended</th>
+        </tr>
+        <tr>
+            <td>{{ attendance.total_days_attended }}</td>
+        </tr>
+    </table>
+
+    <h2>Attended Dates</h2>
+    <table class="styled-table">
+        <tr>
+            <th>Date</th>
+        </tr>
+        {% for date in attended_dates %}
+        <tr>
+            <td>{{ date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

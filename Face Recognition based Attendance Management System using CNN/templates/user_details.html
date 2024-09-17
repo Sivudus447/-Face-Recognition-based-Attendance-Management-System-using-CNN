@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user_details.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Details</h2>
+        <div class="info-section">
+            <h3>Information</h3>
+            <table>
+                <tr>
+                    <th>Full Name</th>
+                    <td>{{ user.full_name }}</td>
+                </tr>
+                <tr>
+                    <th>Roll Number</th>
+                    <td>{{ user.roll_number }}</td>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td>{{ user.phone_number }}</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>{{ user.email }}</td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>{{ user.gender }}</td>
+                </tr>
+                <tr>
+                    <th>Year of Study</th>
+                    <td>{{ user.year_of_study }}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="attendance-stats-section">
+            <h3>Attendance Statistics</h3>
+            <table>
+                <tr>
+                    <th>Total Days Attended</th>
+                    <td>{{ max_days_attended }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="attendance-section">
+            <h3>Dates of Attendance</h3>
+            <table>
+                <tr>
+                    <th>Date</th>
+                </tr>
+                {% for date in attended_dates %}
+                <tr>
+                    <td>{{ date }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+        
+    </div>
+</body>
+</html>

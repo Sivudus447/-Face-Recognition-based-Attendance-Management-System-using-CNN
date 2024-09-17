@@ -1,0 +1,106 @@
+/* Existing CSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: aqua; /* Soft blue background color */
+}
+
+nav {
+    background-color: #1e3758; /* Dark blue for navigation bar */
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.nav-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    color: #fff; /* Change font color to white */
+    text-decoration: none; /* Remove text decoration */
+}
+
+.nav-title:hover {
+    text-decoration: underline; /* Add underline effect on hover */
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+button:hover {
+    background-color: #777;
+    transform: translateY(-3px) rotateX(10deg) rotateY(5deg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px; /* Adjust margin-top as needed */
+    color: #333; /* Change color as needed */
+}
+
+/* New CSS for logo */
+.logo-container {
+    text-align: center;
+    margin-top: 70;
+}
+
+.logo {
+    width: 300px; /* Adjust width as needed */
+    height: auto;
+}
+
+/* New CSS for details */
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 80%;
+    font-size: 30px; /* Increase font size */
+}
+
+.left-details, .right-details {
+    flex: 1;
+}
+
+.left-details {
+    text-align: center; /* Center-align left details */
+}
+
+.right-details {
+    text-align: right;
+}
+
+.right-details p, .left-details p {
+    margin: 5px 0;
+}
+
+.right-details span {
+    margin-left: 10px;
+    font-weight: bold;
+}

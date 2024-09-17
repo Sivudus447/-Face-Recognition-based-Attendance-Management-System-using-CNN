@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #1e3758;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: rotateY(10deg); /* 3D rotation effect */
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #1e3758;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #2c4f7a;
+    transform: translateY(-3px); /* Move button up slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
